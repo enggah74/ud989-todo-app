@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<section id="todoapp">
-			ader id="header">
+			<header id="header">
 				<h1>todos</h1>
 				<input id="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
@@ -27,6 +27,7 @@
 			<div class="view">
 				<input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
 				<label><%- title %><%= completed ? ' --done!' : '' %></label>
+				<button class="priority-btn"></button>
 				<button class="edit-btn"></button>
 				<button class="destroy"></button>
 			</div>
